@@ -214,6 +214,7 @@ NO
 YES
 NO
 ```
+### 풀이 소스 코드
 
 ```python
 T = int(input())
