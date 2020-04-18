@@ -24,7 +24,6 @@ for t in range(1,T+1):
     N = int(input())
     a = str(input())
     ai = list(a)
-    ai_set = set(ai)
     count = Counter(ai)
     cnt = 0
     arr = []
