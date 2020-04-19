@@ -19,3 +19,23 @@
 
 # [출력]
 # 각 줄마다 "#T" (T는 테스트 케이스 번호)를 출력한 뒤, 답을 출력한다.
+
+T = int(input())
+
+for t in range(1,T+1):
+    N, M = map(int,input().split() )
+    ai = list(map(int,input().split()))
+    lst = []
+    for m in range(N):
+        
+        if m>N-M:
+            break
+        else:
+            split = ai[m:m+M]
+            ai_split_sum = sum(split)
+            lst.append(ai_split_sum)
+    lst_min = min(lst)
+    lst_max = max(lst)
+    answer = lst_max-lst_min
+    print("#{0} {1}".format(t, answer))    
+
